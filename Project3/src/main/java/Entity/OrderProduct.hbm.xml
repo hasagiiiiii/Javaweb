@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Mar 22, 2024, 9:28:18 AM by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="Project3" name="Entity.OrderProduct" optimistic-lock="none" schema="dbo" table="OrderProduct">
+        <id name="idOrder" type="java.lang.Integer">
+            <column name="id_Order"/>
+            <generator class="identity"/>
+        </id>
+        <property name="idAccount" type="java.lang.Integer">
+            <column name="id_Account"/>
+        </property>
+        <property name="idProduct" type="java.lang.Integer">
+            <column name="id_Product"/>
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="quantity"/>
+        </property>
+    </class>
+</hibernate-mapping>

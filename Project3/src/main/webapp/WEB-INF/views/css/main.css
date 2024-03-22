@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+:root{
+    --backgroundHeader : #ffffff;
+    --backgroundHot : #E22D2D;
+    --backgroundNew:#438E44;
+    --texColorMidle: #777777;
+    --backgroundMidle: #000000;
+
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* <------------Start Top Header ------------------>  */
+.top_header{
+    background-color: var(--backgroundHeader);
+    width: 100%;
+}
+.top_header .container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.top_header .location-marshall{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    font-family: "Open Sans", sans-serif;
+}
+.top_header .location-marshall .location_icons {
+    width: 60px;
+}
+.top_header .location-marshall .location_icons i {
+    font-size: 30px;
+}
+.top_header .Logo-marshall{
+    transform: translateX(-60px);
+}
+.top_header .Logo-marshall img{
+    padding: 5px 0px 20px 0px;
+}
+
+.top_header .hotline-marshall{
+    display: flex;
+    align-items: center;
+}
+.top_header .hotline-marshall .hotline-icons{
+    padding: 0px 10px;
+}
+.top_header .hotline-marshall .hotline-phoneNumber{
+    letter-spacing: 0.8px;
+    font: 16px;
+    opacity: 0.7;
+    font-family: "Open Sans",sans-serif;
+}
+
+
+/* <------------Start Midle Header ------------------>  */
+
+.midle-header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--backgroundMidle);
+}
+.midle-header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.midle-header .container .left-menu,.midle-header .container .right-menu{
+    display: flex;
+    justify-content: center;
+}
+.midle-header .container .left-menu li,.midle-header .container .right-menu li {
+    position: relative;
+    padding: 0px 10px;
+}
+.midle-header .container .right-menu li .quantity{
+    position: absolute;
+    font-size: 10px;
+    background-color: var(--backgroundHeader);
+    border-radius: 50%;
+    right: 0;
+    top: -10px;
+    padding: 2px 5px;
+    text-align: center;
+    color: var(--backgroundMidle);
+}
+.midle-header .container .left-menu li a,.midle-header .container .right-menu li a{
+    color: var(--backgroundHeader);
+    font-weight: 500;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+
+}
+.midle-header .container .right-menu li #account ,#share,#heart{
+    background-color: var(--backgroundHeader);
+    border-radius: 50%;
+    padding: 10px 13px;
+    color: var(--backgroundMidle);
+}
+
+
+

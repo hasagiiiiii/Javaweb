@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Mar 22, 2024, 9:28:18 AM by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="Project3" name="Entity.Wishlist" optimistic-lock="none" schema="dbo" table="Wishlist">
+        <id name="idWishlist" type="java.lang.Integer">
+            <column name="id_Wishlist"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="Entity.Account" fetch="select" name="account">
+            <column name="id_Account"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
