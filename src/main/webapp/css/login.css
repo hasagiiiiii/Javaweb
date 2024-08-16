@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+/* body {
+ height: 100vh;
+    background: #01939c;
+  overflow-y: hidden!important;
+    font-family: 'Poppins', sans-serif;
+} */
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+}
+a:hover {
+    color: #179b77;
+}
+.form {
+    /* background: #12141d; */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3); */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.tab-group{
+    width: 400px;
+    margin: 25px 0 0 100px !important;
+}
+.tab-group .wrapp {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+}
+.tab-group p {
+    margin-top: 50px;
+    width: 150%;
+    text-align: left;
+    font-size: larger;
+    letter-spacing: 0.7px;
+    line-height: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    padding: 15px;
+    background: rgba(160, 179, 176, .25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.tab-group li a:hover {
+    background: black;
+    color: #fff;
+   
+}
+.tab-group .active a {
+    background: black;
+    color: #fff;
+}
+.tab-content > div:first-child {
+    display: none;
+}
+.tab-group{
+ border-radius: 15px!important;
+ margin: 20px;
+}
+.tab-content{
+    width: 500px;
+}
+h1 {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0 0 40px;
+}
+input, textarea {
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 6px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+textarea {
+    border: 2px solid #01939c;
+    resize: vertical;
+}
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.top-row > div:last-child {
+    margin: 0;
+}
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background: black;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.button:hover, .button:focus {
+    background: black;
+}
+.button-block {
+    display: block;
+    width: 100%;
+}
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+}

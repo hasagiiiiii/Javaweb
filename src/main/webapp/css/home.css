@@ -1,0 +1,300 @@
+@import url("./main.css");
+/* -------------------Start Banner------------------------ */
+body{
+    background-color: rgba(164, 163, 163, 0.173);
+}
+article{
+    margin-top: 70px;
+}
+.banner{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 1400px;
+    margin: 0 auto;
+}
+.carousel-item {
+    height: 500px;
+    /* width: 1500px; */
+  }
+  .carousel-item img{
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+    filter: brightness(0.8);
+  }
+  .carousel-caption {
+    top: 0;
+    left: 200px;
+    width: 500px;
+    text-align: left;
+  }
+  .carousel-caption a {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: var(--backgroundMidle);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: var(--backgroundHeader);
+  }
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: white;
+  }
+/* ------------------------Start HotDeals--------------------------- */
+section .container{
+    max-width: 95% !important;
+}
+section .Title{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+section .Title .sub-title{
+    font-size: 35px;
+}
+section .Title a{
+    background-color: #00000087;
+    border-radius: 30px;
+    padding: 8px 15px;
+    color: var(--backgroundHeader);
+    font-size: 16px;
+    transition: all ease-in-out 0.25s;
+}
+section .Title a:hover{
+    background-color:#2f2d2d87 ;
+}
+
+/* -------------------------list-marshall----------------------------- */
+.list-marshall{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.list-marshall .item{
+    flex: 1 1 25%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--backgroundHeader);
+    margin:0 15px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.list-marshall .item:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px -2px 12px -2px rgba(0, 0, 0, 0.247);
+}
+.list-marshall .item .status{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.list-marshall .item .action{
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    box-shadow: 6px -2px 11px -2px rgba(193, 192, 192, 0.75);
+    border-radius: 10px ;
+    transition: all ease-in-out 300ms;
+    transition-delay: 0.1s;
+    opacity: 0;
+}
+.list-marshall .item:hover .action{
+    right: 20px;
+    opacity: 1;
+}
+.list-marshall .item .img-product img{
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+    vertical-align: middle;
+}
+.list-marshall .item .description a{
+    display: block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    color: var(--backgroundHeader);
+    background-color: var(--backgroundMidle);
+    border-radius: 10px;
+}
+.list-marshall .item .description a p,.list-marshall .item .description a i{
+    transform: translateY(12px);
+    transition: all ease-in-out 0.4s;
+
+}
+.list-marshall .item .description a:hover p,.list-marshall .item .description a:hover i{
+    transform: translateY(-20px);
+}
+.list-marshall .item .price{
+    display: flex;
+}
+.list-marshall .item .price p{
+    font-size: 14px;
+}
+.list-marshall .item .price .cost{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+/* ---------------------------Detail1------------------------------------ */
+.detail1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--backgroundHeader);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 100px ;
+    margin-bottom: 20px;
+}
+.detail1.toggle .img_midleton{
+    width: 700px;
+    animation: moveUp 1s ease-in-out;
+}
+@keyframes moveUp {
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.detail1 .left_mideleton{
+    width: 60%;
+}
+.detail1 .left_mideleton .left_mideleton_h1.toggle{
+    animation: moveLeft 1s ease-in-out;
+}
+.detail1 .left_mideleton .left_mideleton_p{
+    width: 500px;
+    transform: translateX(1000px);
+}
+.detail1 .left_mideleton .left_mideleton_p.toggle{
+    transform: translateX(0);
+    animation: moveLeft 1s 0.1s ease-in-out;
+}
+
+@keyframes moveLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.detail1 .left_mideleton button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--backgroundMidle);
+    color: var(--backgroundHeader);
+}
+
+/* -----------------MarSHall New------------------- */
+
+.marshall-new{
+    display: flex;
+    align-items: start;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.marshall-new .left-content{
+    position: relative;
+    width: 35%;
+}
+.marshall-new .banner{
+    /* overflow: hidden; */
+    width: 420px;
+    border-radius: 20px;
+    height: 600px;
+}
+.marshall-new .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+.marshall-new .banner img:hover{
+    transform: scale(1.2);
+}
+
+.marshall-new .left-content p{
+    position: absolute;
+    top: 4%;
+    right: 32%;
+    z-index: 999;
+    color: var(--backgroundHeader);
+    opacity: 0.7;
+
+}
+.marshall-new .left-content h1{
+    position: absolute;
+    top: 10%;
+    right: 29%;
+    font-size: 30px;
+    color: var(--backgroundHeader);
+    opacity: 0.7;
+    z-index: 999;
+}
+.marshall-new .right-content .Title {
+    height: 40px;
+}
+.marshall-new .right-content .Title h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.marshall-house{
+    background-color: transparent;
+    background-image: radial-gradient(at top right, #6C685D 0%, #000000 100%);
+}
+
+.top-marshall-house{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.top-marshall-house .img-marshall-house.toggle{
+    animation: moveUp 1s ease-in-out;
+}
+.content-marshall-house.toggle{
+    animation: moveLeft 1s ease-in-out;
+}
+.content-marshall-house h1{
+    position: relative;
+    color: var(--backgroundHeader);
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.content-marshall-house h1::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: var(--backgroundHeader);
+    bottom: 0;
+    left: 0;
+
+}
+
+.content-marshall-house p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 650px;
+}
+.content-marshall-house button{
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+}

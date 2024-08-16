@@ -1,0 +1,4 @@
+2024-04-17 10:07:06,589 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-17 10:08:27,780 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-17 10:08:38,796 [Worker-0: https://planet.jboss.org/feeds/buzz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://feeds.feedburner.com:443
+2024-04-17 10:08:38,873 [Worker-23: https://download.jboss.org/jbosstools/photon/staging/updates/discovery.central/4.29.0.Final/plugins/org.jboss.tools.central.discovery_4.28.0.Final-v20231026-1542-B1618.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://download.jboss.org:443

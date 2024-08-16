@@ -1,0 +1,228 @@
+@import url("../css/main.css");
+body{
+
+    background-color: rgba(99, 100, 100, 0.085);
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+.top-content{
+    display: flex;
+    align-items: center;
+}
+.top-content a{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.655);
+    font-family: "Open Sans", sans-serif;
+    opacity: 0.7;
+}
+.top-content p{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.banner{
+    display: flex;
+    align-items: start;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.banner .item{
+    width: 180px;
+}
+.banner .item img{
+    object-fit: cover;
+    height: 67px;
+}
+.banner .item h3{
+    font-family: "Open Sans", sans-serif;
+
+}
+.banner .item .cout-product{
+    opacity: 0.7;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+.Menu-marshall{
+    display: flex;
+    align-items: start;
+    margin-top: 30px;
+    gap: 20px;
+}
+.side-bar-marshall{
+    width: 30%;
+    background-color: #fff;
+    height: 70vh;
+    position: relative;
+}
+.slider{
+    margin-top: 20px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.side-bar-marshall input[type=range] {
+    /* -webkit-appearance: none; */
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    height: 5px;
+    pointer-events: none;
+
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 5px;
+    pointer-events: auto;
+    background-color: black;
+    /* outline: 2px solid rgba(0, 0, 0, 0.233); */
+}
+.progress-before{
+    position: absolute;
+    top: 47px;
+    left: 0%;
+    right: 0%;
+    height: 5px;
+    margin-top: 6px;
+    border-radius: 12px;
+    background: black;
+} 
+input[type="range"]::-webkit-slider-runnable-track{
+    height: 10px;
+    position: relative;
+}
+input[type="range"]::-moz-range-track{
+    height: 10px;
+    position: relative;
+}
+
+
+.prices{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.prices p{
+    font-size: 20px;
+    padding: 0px 20px;
+    margin-bottom:3px ;
+    overflow-x: hidden;
+}
+.prices button{
+    padding: 5px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* --------------------List Marshall-------------------- */
+
+.list-product{
+	width: 70%;
+}
+.list-marshall{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.list-marshall .item{
+    flex: 1 1 25%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--backgroundHeader);
+    margin:0 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.list-marshall .item:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px -2px 12px -2px rgba(0, 0, 0, 0.247);
+}
+.list-marshall .item .status{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.list-marshall .item .action{
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    box-shadow: 6px -2px 11px -2px rgba(193, 192, 192, 0.75);
+    border-radius: 10px ;
+    transition: all ease-in-out 300ms;
+    transition-delay: 0.1s;
+    opacity: 0;
+}
+.list-marshall .item:hover .action{
+    right: 20px;
+    opacity: 1;
+}
+.list-marshall .item .img-product img{
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+    vertical-align: middle;
+}
+.list-marshall .item .description a{
+    display: block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    color: var(--backgroundHeader);
+    background-color: var(--backgroundMidle);
+    border-radius: 10px;
+}
+.list-marshall .item .description a p,.list-marshall .item .description a i{
+    transform: translateY(12px);
+    transition: all ease-in-out 0.4s;
+
+}
+.list-marshall .item .description a:hover p,.list-marshall .item .description a:hover i{
+    transform: translateY(-20px);
+}
+.list-marshall .item .price{
+    display: flex;
+}
+.list-marshall .item .price p{
+    font-size: 14px;
+}
+.list-marshall .item .price .cost{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.top-views{
+    display: flex;
+    justify-content: space-between;
+}
+.grid-show{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.grid-show li a{
+    color: black;
+}
+.grid-show select{
+    width: 50%;
+    height: 30px;
+} 
